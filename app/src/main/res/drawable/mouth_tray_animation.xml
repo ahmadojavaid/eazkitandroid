@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/mouth_tray_1"
+        android:duration="300"
+        />
+    <item android:drawable="@drawable/mouth_tray_2"
+        android:duration="300"
+        />
+    <item android:drawable="@drawable/mouth_tray_3"
+        android:duration="300"
+        />
+    <item android:drawable="@drawable/mouth_tray_4"
+        android:duration="300"
+        />
+    <item android:drawable="@drawable/mouth_tray_5"
+        android:duration="300"
+        />
+    <item android:drawable="@drawable/mouth_tray_6"
+        android:duration="300"
+        />
+    <item android:drawable="@drawable/mouth_tray_7"
+        android:duration="300"
+        />
+    <item android:drawable="@drawable/mouth_tray_8"
+        android:duration="300"
+        />
+    <item android:drawable="@drawable/mouth_tray_9"
+        android:duration="300"
+        />
+
+
+</animation-list>

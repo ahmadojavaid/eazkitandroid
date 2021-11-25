@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".CreateProfile2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="@dimen/alpha_value"
+        android:background="@drawable/bg_light" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/cp2_stepTwoContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/cp2_stepTwoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Step 2 of 2"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cp2_stepTwoContainer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cp2_whiteningPrefsCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/cp2_whiteningPrefLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Whitening Preferences"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/cp2_grayView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_whiteningPrefLabel"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <TextView
+                            android:id="@+id/cp2_howTowhitenLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cp2_grayView1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="How often would you like to whiten ?"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id="@+id/cp2_grayView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/cp2_howTowhitenLabel"
+                            android:layout_marginTop="10dp" />
+
+                        <RadioGroup
+                            android:id="@+id/cp2_rbGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_grayView2"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioButton
+                                android:id="@+id/cp2_rbOnceADay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Once a day"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/cp2_rbTwiceADay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Twice a day"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/cp2_rbOnceEveryTwoDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Once every two days"
+                                android:textSize="20sp" />
+
+                            <!--<RadioButton-->
+                            <!--android:id="@+id/cp2_rbOther"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="20sp"-->
+                            <!--android:text="Other" />-->
+                        </RadioGroup>
+
+                        <View
+                            android:id="@+id/cp2_grayView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_rbGroup"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <TextView
+                            android:id="@+id/cp2_sessionLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cp2_grayView3"
+                            android:padding="20dp"
+                            android:text="@string/sessionquestion"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:id="@+id/cp2_timePickerContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cp2_sessionLabel"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:id="@+id/cp2_sessionTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="06:00"
+                                android:textColor="@color/blue"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/cp2_AMPM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="AM"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/cp2_grayView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_timePickerContainer"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <TextView
+                            android:id="@+id/cp2_notifiedLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_grayView4"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/notifyquestion"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/cp2_notificationRG"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_notifiedLabel"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Image alert on screen"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sound alert"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sound and Image alert"
+                                android:textSize="20sp" />
+                        </RadioGroup>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cp2_whiteningTimesCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cp2_whiteningPrefsCard"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/cp2_whiteningTimesLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Whitening Times"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id="@+id/cp2_grayView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_whiteningTimesLabel"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <TextView
+                            android:id="@+id/cp2_FirstTime_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_grayView5"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="1st Time"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:id="@+id/cp2_whiteningTimerContainer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_FirstTime_label"
+                            android:layout_centerInParent="true">
+
+                            <Spinner
+                                android:id="@+id/cp2_Whitening1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20"
+                                android:textColor="@color/blue"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/minutes1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="minutes"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/cp2_grayView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_whiteningTimerContainer1"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <TextView
+                            android:id="@+id/cp2_SecondTime_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cp2_grayView6"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="2nd Time"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:id="@+id/cp2_whiteningTimerContainer2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_SecondTime_label"
+                            android:layout_centerHorizontal="true">
+
+                            <Spinner
+                                android:id="@+id/cp2_Whitening2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="45"
+                                android:textColor="@color/blue"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/minutes2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="minutes"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/cp2_grayView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_whiteningTimerContainer2"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <TextView
+                            android:id="@+id/cp2_ThirdTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cp2_grayView7"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="3rd Time"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:id="@+id/cp2_whiteningTimerContainer3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_ThirdTimeLabel"
+                            android:layout_centerHorizontal="true">
+
+                            <Spinner
+                                android:id="@+id/cp2_Whitening3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50"
+                                android:textColor="@color/blue"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/minutes3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="minutes"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/cp2_grayView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_whiteningTimerContainer3"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <TextView
+                            android:id="@+id/cp2_FourthTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_grayView8"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="4th Time"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_FourthTimeLabel"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:id="@+id/cp2_Whitening4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="50"
+                                android:textColor="@color/blue"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/minutes4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="minutes"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cp2_countDownCards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cp2_whiteningTimesCard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/cp2_countdownLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Countdown"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/cp2_grayView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_countdownLabel"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <LinearLayout
+                            android:id="@+id/cp2_countdownToggleContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cp2_grayView9">
+
+                            <TextView
+                                android:id="@+id/cp2_likeCountdownLabel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/cp2_grayView9"
+                                android:layout_weight="1"
+                                android:paddingLeft="20dp"
+                                android:paddingBottom="20dp"
+                                android:text="@string/countdowntoggle"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <Switch
+                                android:id="@+id/swichCountDown"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right" />
+                        </LinearLayout>
+
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/cp2_countIntervalLabel"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/cp2_grayView10"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="Countdown interval"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="16sp" />-->
+
+                        <!--<LinearLayout-->
+                        <!--android:id="@+id/counterIntervalTimerContainer"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/cp2_countIntervalLabel"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="10dp">-->
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/cp2_countDownInterval"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="45"-->
+                        <!--android:textColor="@color/blue"-->
+                        <!--android:textSize="24sp" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/minutes5"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:text="minutes"-->
+                        <!--android:textSize="24sp" />-->
+                        <!--</LinearLayout>-->
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cp2_countDownCards"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/cp2_toothfieLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Take a Toothfie"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/cp2_grayView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/cp2_toothfieLabel"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ligtgray" />
+
+                        <ImageView
+                            android:id="@+id/cp2_toothfie"
+                            android:layout_width="265dp"
+                            android:layout_height="144dp"
+                            android:layout_below="@+id/cp2_grayView11"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/toothfie_image_placeholder" />
+
+                        <Button
+                            android:id="@+id/cp2_takeToothfieBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cp2_toothfie"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/blue_button_rounded_corners"
+                            android:text="Take Photo"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <RelativeLayout
+                            android:id="@+id/saveFinishButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/cp2_takeToothfieBtn"
+                            android:background="@drawable/green_rect_half_corners">
+
+                            <TextView
+                                android:id="@+id/cp2_savFin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="Save &amp; Finish"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                tools:ignore="HardcodedText" />
+
+                            <ImageView
+                                android:id="@+id/cp2_animatingTeeth"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/cp2_savFin" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="EAZKIT"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

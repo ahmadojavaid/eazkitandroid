@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/alert_dialog_margin_left"
+    android:layout_marginRight="@dimen/alert_dialog_margin_right"
+    tools:context=".InputPin">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/toolbar"
+                    android:layout_height="@dimen/navigation_bar_height">
+
+                    <TextView
+                        android:id="@+id/inputPin_InputHeading"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                      android:gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:text="Please input PIN"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/closeInputPin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_close_black_24dp" />
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:id="@+id/inputPin_grayView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/toolbar"
+                    android:background="@color/ligtgray" />
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pinView"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inputPin_grayView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:cursorVisible="true"
+
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:text="1234"
+                    app:cursorWidth="2dp"
+                    app:hideLineWhenFilled="true"
+                    app:viewType="line" />
+
+                <RelativeLayout
+                    android:id="@+id/resetButton"
+                    android:layout_width="180dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/pinView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/green_rect_curved_corners">
+
+                    <TextView
+                        android:id="@+id/inputPass_ResetLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Reset"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/inputPin_teethImage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/inputPass_ResetLabel" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

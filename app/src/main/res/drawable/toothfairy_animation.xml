@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/toothfiary_1"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/toothfiary_2"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/toothfiary_3"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/toothfiary_4"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/toothfiary_5"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/toothfiary_6"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/toothfiary_7"
+        android:duration="300" />
+    <item
+        android:drawable="@drawable/toothfiary_8"
+        android:duration="300" />
+</animation-list>

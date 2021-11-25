@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">EAZKIT</string>
+
+    <string name="descone">Use the EAZKIT app with the EAZKIT to assist your teeth whitening process.</string>
+    <string name="barbecue">Enter your requirements and plug in the ALYUME 16 light!</string>
+    <string name="delivery_address">Delivery address used to purchase the
+                        </string>
+    <string name="aboutEazkit">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type specimen book. It has survived not only five centuries.
+    </string>
+    <string name="thankyou">
+        Thank you for your message. Please note that this is one way message system for subject statistics.
+        For assistance please contact your Briyte retailer. :)
+    </string>
+    <string name="sessionquestion">
+        What time of day will you start your session?
+    </string>
+    <string name="countdowntoggle">
+        Would you like a countdown
+on screen whilst whitening?
+    </string>
+    <string name="subtitle_three">
+        This is an assistance to the EAZKIT based on your requirements which you enter.
+        Please refer to the user guide. I understand that this app is intended to be an assistance to using the
+        EAZKIT and take responsibility for my use of the EAZKIT and the information
+        I enter into this app. I agree that my information may be stored and
+        used. I understand that the information I enter into this app needs to be stored and used,
+        this should assist with the whitening process whilst using the EAZKIT.
+    </string>
+    <string name="changePassLabel">
+        A password reset pin will be sent to the
+email associated with this account. Please
+input the pin in the next screen to reset
+the password. The pin will be valid for 1
+hour.
+    </string>
+    <string name="startWhitening">Please touch the button below as asoon as you are ready</string>
+    <string name="notifyquestion">How would you like to be notified ?</string>
+    <string name="open_link_using">Open Link Using:</string>
+    <string name="fb_verify">your facebook profile is not verified</string>
+    <string name="login_cancel">Login Cancelled</string>
+    <string name="gmail_login_unsuccessfull">unable to login using gmail</string>
+    <!--<string name="facebook_app_id">XdTNlZREhgF/guDUeaiabtPERsE=</string>-->
+
+    <string name="facebook_app_id">342517329913491</string>
+    <string name="fb_login_protocol_scheme">fb342517329913491</string>
+</resources>

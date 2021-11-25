@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city_arrays">
+        <item>Atlanta</item>
+        <item>Austin</item>
+        <item>Baltimore</item>
+        <item>Boston</item>
+        <item>Chicago</item>
+        <item>Cincinnati</item>
+        <item>Cleveland</item>
+        <item>Dallas</item>
+        <item>Denver</item>
+        <item>Detroit</item>
+        <item>Houston</item>
+        <item>Indianapolis</item>
+        <item>Jacksonville</item>
+        <item>Kansas City</item>
+        <item>Los Angeles</item>
+        <item>Louisville</item>
+    </string-array>
+
+</resources>

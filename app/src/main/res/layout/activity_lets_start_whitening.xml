@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".LetsStartWhitening">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="@dimen/alpha_value"
+        android:background="@drawable/bg_dark" />
+
+
+    <RelativeLayout
+        android:id="@+id/mainActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navigation_bar_height">
+
+            <ImageView
+                android:id="@+id/menuButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:padding="13dp"
+                android:src="@drawable/back_arrow"
+                android:tint="@color/gray" />
+
+            <TextView
+                android:id="@+id/startWhitening_startWhiteningLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Lets Start Whitening"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:id="@+id/sartWhitening_ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/startWhitening_instructionsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Please follow instructions below"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/startWhitening_step1Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/startWhitening_instructionsLabel"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="@color/blue"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/startWhitening_Step1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Apply gel to EAZKIT Ready Mouth Tray. Apply gel to teeth with EAZKIT-Direct Tooth Brush (optional)."
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/startWhitening_Step1Image"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/startWhitening_Step1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:scaleType="centerCrop" />
+
+                        <CheckBox
+                            android:id="@+id/putGelCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/startWhitening_Step1Image"
+                            android:layout_alignParentRight="true"
+                            android:buttonTint="@color/white" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/startWhitening_step2Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startWhitening_step1Card"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="@color/green"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/startWhitening_instructionsLabe2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Plug the Mouth Light ALYUME 16 into your device."
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/startWhitening_Step2Image"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/startWhitening_instructionsLabe2"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20dp"
+                            android:scaleType="centerCrop" />
+
+                        <CheckBox
+                            android:id="@+id/mouthLightInsertionBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/startWhitening_Step2Image"
+                            android:layout_alignParentRight="true"
+                            android:buttonTint="@color/white" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/startWhitening_step3Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/startWhitening_step2Card"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="@color/red"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/startWhitening_instructionsLabe3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Insert the EAZKIT Ready Mouth Tray into your mouth."
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/startWhitening_Step3Image"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/startWhitening_instructionsLabe3"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20dp"
+                            android:scaleType="centerCrop" />
+
+                        <CheckBox
+                            android:id="@+id/placeTrayCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/startWhitening_Step3Image"
+                            android:layout_alignParentRight="true"
+                            android:buttonTint="@color/white" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/startWhitening_ReadyLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startWhitening_step3Card"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/startWhitening"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/startWhitening_StartWhiteningBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startWhitening_ReadyLabel"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/green_rect_curved_corners">
+
+                    <TextView
+                        android:id="@+id/startWhitening_touchHereLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Touch Here"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/bateesiContainer"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/startWhitening_touchHereLabel" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/eazkit_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startWhitening_StartWhiteningBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="20dp"
+
+                    android:text="EAZKIT"
+
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

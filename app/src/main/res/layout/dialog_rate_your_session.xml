@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/alert_dialog_margin_left"
+    android:layout_marginRight="@dimen/alert_dialog_margin_right"
+    tools:context=".DiagRateYourSession">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/rateSession_Heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Please rate your session"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <RatingBar
+                    android:id="@+id/rateSession_sessionRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rateSession_Heading"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:id="@+id/rateSession_ratingSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rateSession_sessionRating"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/SubmitRating"
+                    android:layout_width="180dp"
+                    android:layout_height="42dp"
+
+                    android:layout_below="@+id/rateSession_ratingSubtitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/green_rect_curved_corners">
+
+                    <TextView
+                        android:id="@+id/rateSession_ratNowLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Rate Now"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/rateSessionAnimatingTooth"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/rateSession_ratNowLabel" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/not_now_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SubmitRating"
+                    android:layout_centerHorizontal="true"
+                    android:text="Not now"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>
